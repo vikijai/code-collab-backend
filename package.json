@@ -1,0 +1,30 @@
+{
+  "name": "code-collab-backend",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/vikijai/code-collab-backend#readme",
+  "bugs": {
+    "url": "https://github.com/vikijai/code-collab-backend/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vikijai/code-collab-backend.git"
+  },
+  "dependencies": {
+    "axios": "^1.8.4",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "nodemon": "^3.1.9",
+    "socket.io": "^4.7.2",
+    "socket.io-client": "^4.7.2"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  }
+}
