@@ -54,6 +54,7 @@ const getAllConnectedClients = (roomId) => {
 };
 
 io.on("connection", (socket) => {
+  console.log('✅ WebSocket connected!');
   socket.on(ACTIONS.JOIN, ({ roomId, username }) => {
     userSocketMap[socket.id] = username;
     socket.join(roomId);
@@ -79,6 +80,7 @@ io.on("connection", (socket) => {
 
   // leave room
   socket.on("disconnecting", () => {
+    console.log('❌ WebSocket disconnected!');
     const rooms = [...socket.rooms];
     // leave all the room
     rooms.forEach((roomId) => {
